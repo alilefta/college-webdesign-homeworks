@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;700&family=Poppins&family=Roboto:wght@300;400;700&display=swap");
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	/* CSS HEX */
+	--spanish-gray: #949496ff;
+	--old-rose: #c98b8aff;
+	--white: #ffffffff;
+	--gray-x-11-gray: #b7b7b8ff;
+	--gray-web: #7f7f80ff;
+	--rose-web: #ab2323;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	padding: 0;
+	margin: 0;
+	line-height: 16px;
+	transform: scale(1, 0.9);
+}
+p {
+	color: #6c6c6cff;
+}
+body {
+	margin: 2px;
+	padding: 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	background-color: #f1f1f1ff;
+	border: 1px solid #000;
+}
+/* Nav */
+nav {
+	padding: 12px 0 0 5px;
+	width: 18%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+nav .logo span {
+	font-family: "Poppins", sans-serif;
+	font-size: 0.9em;
+}
+
+nav .logo a {
+	text-decoration: none;
+	color: rgb(88, 88, 88);
+	font-weight: 700;
+	font-family: "Kanit";
+}
+
+nav .logo a i {
+	font-size: 1.5em;
+}
+
+nav .navigation .group {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	font-family: "Kant", sans-serif;
+
+	font-size: 0.9em;
+	margin: 10px 0;
+}
+
+nav .navigation .group h4 {
+	color: #ab2323;
+}
+
+nav .navigation .group ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0;
+}
+
+nav .navigation .group ul li a {
+	text-decoration: none;
+	color: #656565ff;
+	/* font-weight: 400; */
+}
+
+nav .navigation .group ul li:hover a {
+	color: var(--rose-web);
+}
+/* Main Content */
+
+main {
+	width: 64%;
+	background-color: #fff;
+	border: 2px solid rgb(95, 95, 95);
+	padding: 20px 8px;
+	margin: 2px;
+}
+
+main h1 {
+	font-family: "Kanit", sans-serif;
+	font-size: 1.9em;
+	font-weight: 400;
+	margin-bottom: 12px;
+}
+main .nav-buttons {
+	border-bottom: 2px solid #b7b7b8ff;
+	padding: 8px 0;
+}
+
+main .nav-buttons:last-child {
+	border-top: 2px solid #b7b7b8ff;
+}
+
+main .nav-buttons button {
+	width: 140px;
+	text-align: center;
+	background-color: transparent;
+	cursor: pointer;
+	position: relative;
+}
+
+main .nav-buttons button.prev-nav-btn {
+	margin-right: 5px;
+}
+
+main .nav-buttons button.prev-nav-btn i {
+	font-size: 0.9em;
+	text-align: center;
+	position: absolute;
+	left: 4px;
+	bottom: 4.3px;
+}
+
+main .nav-buttons button.next-nav-btn i {
+	font-size: 0.9em;
+	text-align: center;
+	position: absolute;
+	right: 4px;
+	bottom: 4.3px;
+}
+main section {
+	margin: 8px 0;
+}
+main section h2 {
+	background-color: #7f7f80ff;
+	color: #fff;
+	font-family: "Arial", sans-serif;
+	font-size: 1em;
+	padding: 0 0 0 5px;
+}
+
+main section .card {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 10px 0;
+}
+
+main section .card-content > h3 {
+	font-family: "Kanit", sans-serif;
+}
+
+main section .card-content h3 + p {
+	font-weight: 500;
+	font-family: "Kanit", sans-serif;
+	line-height: 16px;
+	color: #000000;
+}
+
+main section .card .card-img {
+	width: 30%;
+	margin: 0 15px 0 5px;
+}
+
+main section .card .card-img img {
+	width: 95px;
+}
+
+main section .card .card-content {
+	width: auto;
+}
+main section .card .card-content p {
+	margin-bottom: 10px;
+	font-family: "Kanit", sans-serif;
+}
+
+main section .card .card-content span {
+	margin-top: 10px;
+}
+main section .card .card-content span a {
+	color: var(--rose-web);
+}
+
+/* Aside content */
+aside {
+	width: 18%;
+	margin-left: 1px;
+}
+
+aside .side-group {
+	text-align: center;
+	padding: 0 1px 1px 1px;
+}
+
+aside .side-group .side-group-segment {
+	padding-bottom: 5px;
+	border: 1.9px solid #b7b7b8ff;
+	padding: 0 10px;
+}
+aside .side-group span {
+	display: block;
+}
+aside .side-group a {
+	color: var(--rose-web);
+	/* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+	font-size: 0.9em;
+}
+
+aside .side-group h3 {
+	background-color: #7f7f80ff;
+	color: #fff;
+}
+aside .side-group.search {
+	border: 2px solid #7f7f80ff;
+}
+aside .side-group.search form {
+	margin-top: 4px;
+}
+aside .side-group.search form input {
+	width: 70%;
+}
+aside .side-group.search form button {
+	border-radius: 3px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+aside .side-group.btn-component {
+	border: 2px solid #7f7f80ff;
+	padding: 2px 0;
+}
+aside .side-group.btn-component button {
+	width: 130px;
+	height: 30px;
+	box-shadow: -1px 0px 11px 0px #167ce0 inset;
+	color: #2c7cca;
+	font-weight: 700;
+	cursor: pointer;
+}
